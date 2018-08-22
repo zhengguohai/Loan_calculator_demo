@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>贷款计算机</title>
+
+    <!-- 这是一个css样式，接着就是写一个样式，把下面的表格拿过来到样式当中去执行-->
+    <style>
+
+        .output {
+            font-weight: bold; /* 给输出结果定义粗体*/
+        }
+
+        #payment {
+            text-decoration: underline; /* 加上下划线*/
+        }
+
+        #graph {
+            border: solid black 1px; /*图表有一个像素的边框并且设置黑色的边框*/
+        }
+
+        td, td {
+            vertical-align: top; /*表格单元对齐方式为顶端对齐*/
+        }
+
+        input {
+            color: #5a4fff; /*对输入的方方框框里面的字体做颜色更改*/
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+</body>
+
+
+<!-- 先写好这个表的版本先-->
+<table>
+
+
+    <tr>
+        <th>输入贷款数据：</th>
+        <td></td>
+        <th>贷款余额，累积权益和利息支付</th>
+    </tr>
+
+
+    <tr>
+        <td>贷款金额（$)：</td>
+        <td><input id="amount" onchange="calculate();"></td>
+        <td rowspan="8">
+            <canvas id="graph" width="450" height="260"></canvas>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>年利率（％）：</td>
+        <td>
+            <input id="apr" onchange="calculate();">
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>还款期（年）：</td>
+        <td><input id="years" onchange="calculate();"></td>
+    </tr>
+
+
+    <tr>
+        <td>Zipcode（寻找贷方)：</td>
+        <td><input id="zipcode" onchange="calculate();"></td>
+    </tr>
+
+
+    <tr>
+        <th>近似付款：</th>
+        <td>
+            <button onclick="calculate();">计算</button>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>每月支付：</td>
+        <td>$</td>
+        <span class="output" id="payment"></span>
+    </tr>
+
+
+    <tr>
+        <td>付款总额：</td>
+        <td>$</td>
+        <span class="output" id="total"></span>
+    </tr>
+
+
+    <tr>
+        <td>总利息：</td>
+        <td>$</td>
+        <span class="output" id="totalinterest"></span>
+    </tr>
+
+
+    <tr>
+        <th>主办单位：</th>
+        <td colspan=10>
+            向这些优秀贷款人之一申请贷款：
+            <div id="lenders"></div>
+        </td>
+    </tr>
+
+</table>
+
+
+</html>
