@@ -20,7 +20,7 @@ function calculate() {
     var amount = document.getElementById("amount"); //贷款金额（$)输出的id
     var apr = document.getElementById("apr"); //年利率（％）的ID
     var years = document.getElementById("years");//还款期（年）的ID
-    var zipcde = document.getElementById("zipcode");//Zipcode（寻找贷方)的ID
+    var zipcode = document.getElementById("zipcode");//Zipcode（寻找贷方)的ID
     var payment = document.getElementById("payment");//每月支付的ID
     var total = document.getElementById("total");//付款总额的ID
     var totalinterest = document.getElementById("totalinterest");//总利息的ID
@@ -35,6 +35,43 @@ function calculate() {
 
 
     //现在开始计算月度赔付的数据
-    
+    /** 复杂的算术运算，这些复杂运算通过作为Math对象的属性定义的函数和常量来实现*/
+    var x = Math.pow(1 + interest, payments);//Math.pow()进行幂次运算
+    var monthly = (principal * x * interest) / (x - 1);//(X-1)
+
+
+    //如果结果没有超过js能表示的数字范围之内，并且用户输入的也正确的话，所展示的结果就是合法的和正确的
+    /**isFinite() 函数用于检查其参数是否是无穷大*/
+    if (isFinite(monthly)) {
+        //将数据填充至输出字段的位置,四舍五入到小数点后两位数字
+        /**innerHTML 属性设置或返回表格行的开始和结束标签之间的 HTML,改变文本, URL, 及链接目标,   toFixed() 方法可把 Number 四舍五入为指定小数位数的数字*/
+        payment.innerHTML = monthly.toFixed(2);//每月支付四舍五入到两位
+        total.innerHTML = (monthly * payments).toFixed(2);//付款总额四舍五入到两位
+        totalinterest.innerHTML = ((monthly * payments) - principal).toFixed(2);//总利息四舍五入到两位
+
+        //将用户的输入数据存下来，这样在下次访问的时候也可以读取数据
+        save(amount.value, apr.value, years.value, zipcode.value);
+
+
+        //找到并展示本地房贷人,但忽略网络的错误
+        try { //捕获这段代码抛出的所有的异常
+            getLenders(amount.value, apr.value, years.value, zipcode.value);
+        }
+        catch (e) {
+            /*忽略这些异常部分*/
+        }
+        //最后，用图标展示贷款余额、利息和资产收益
+        chart(principal, interest, monthly, payments);
+
+    }
+    else {
+        //计算结果不是数字或者是无穷大，意味着输入数据是非或不完整的
+        //清空之前的输出数据
+        payment.innerHTML = "";//清空元素的文本内容
+        total.innerHTML = "";//一样
+        totalinterest.innerHTML = "";//同理
+        chart();//不传参数的话，就是清楚图表
+    }
+
 
 }
