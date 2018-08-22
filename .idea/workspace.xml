@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b796a693-63d2-490b-879d-c18631865e25" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Loan Calculator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="b796a693-63d2-490b-879d-c18631865e25" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -61,9 +58,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="145" />
-    <option name="y" value="135" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="283" />
+    <option name="y" value="141" />
     <option name="width" value="1447" />
     <option name="height" value="915" />
   </component>
@@ -117,15 +114,15 @@
       <option name="presentableId" value="Default" />
       <updated>1534943610135</updated>
       <workItem from="1534943612635" duration="30000" />
-      <workItem from="1534943652589" duration="32000" />
+      <workItem from="1534943652589" duration="514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62000" />
+    <option name="totallyTimeSpent" value="544000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="145" y="135" width="1447" height="915" extended-state="0" />
+    <frame x="648" y="620" width="1447" height="915" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494817" />
