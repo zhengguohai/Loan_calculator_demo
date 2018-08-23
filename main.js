@@ -72,6 +72,36 @@ function calculate() {
         totalinterest.innerHTML = "";//同理
         chart();//不传参数的话，就是清楚图表
     }
+}
 
 
+//将用户的输入保存至localStorage对象的属性当中
+//这些属性再一次访问还会继续保持在原有的位置中
+//如果你是在浏览器当中按照file://URL的方式直接打开本地文件
+//则无法在某些浏览器中使用存储功能（比如Firefox浏览器等）
+//而通过HTML打开文件是可以的
+
+
+/**2018.8.23*/
+/**保存的方法名开始写方法就是给调用的方法单独一个一个去写这些方法执行的代码部分*/
+function save(amount, apr, years, zipcode) {
+
+    if (window.localStorage) { //只有你打开浏览器的时候才会执行这里的代码
+        localStorage.loan_amount = amount;
+        localStorage.loan_apr = apr;
+        localStorage.loan_years = years;
+        localStorage.loan_zipcode = zipcode;
+    }
+}
+
+/**2018.8.23*/
+/*在文档首次加载的时候，将会尝试还原输入字段*/
+window.onload = function () {
+    //如果浏览器支持本地存储并且上次的保存是存在的
+    if (window.localStorage && localStorage.loan_amount) {
+        document.getElementById("amount").value = localStorage.loan_amount;
+        document.getElementById("apr").value = localStorage.loan_apr;
+        document.getElementById("years").value = localStorage.loan_years;
+        document.getElementById("zipcode").value = localStorage.loan_zipcode;
+    }
 }
