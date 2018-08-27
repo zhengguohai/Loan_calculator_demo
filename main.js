@@ -105,3 +105,31 @@ window.onload = function () {
         document.getElementById("zipcode").value = localStorage.loan_zipcode;
     }
 }
+
+//将用户发送到服务器脚本
+//返回一个本地放款人的链接表，在这个例子当中并没有实现这种查找放款人的服务
+//但如果该服务存在，则该函数会使用它
+function getLenders(amount, apr, years, zipcode) {
+
+    //如果浏览器不支持XMLHttpRequest对象，则退出
+    if (!window.XMLHttpRequest) return;
+
+    //找到要显示放款人列表的元素
+    var ad = document.getElementById("lenders");
+    if (!ad) return; //如果返回为空，则退出
+
+    //将用户输入数据进行URL编码，并作为查询参数附加在URL里
+    var url = "getLenders.php" +  //处理数据的URL地址
+        "?amt=" + encodeURIComponent(amount) +
+        "&apr=" + encodeURIComponent(apr) +
+        "&yrs=" + encodeURIComponent(years) +
+        "&zip=" + encodeURIComponent(zipcode);
+
+
+    //通过XMLHttpRequest对象来提取返回的数据
+    var req = new XMLHttpRequest(); //发起一个新的请求
+    req.open("GET", "url"); //通过URL发起一个http get请求
+    req.send(null); //不带任何正文发送这个请求
+    
+
+}
