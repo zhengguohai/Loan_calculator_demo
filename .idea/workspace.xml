@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b796a693-63d2-490b-879d-c18631865e25" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Loan Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/Loan Calculator.html" afterDir="false" />
-    </list>
+    <list default="true" id="b796a693-63d2-490b-879d-c18631865e25" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -132,16 +130,15 @@
       <workItem from="1535465718276" duration="39000" />
       <workItem from="1535465772730" duration="787000" />
       <workItem from="1535466664103" duration="2147000" />
-      <workItem from="1537887794146" duration="258000" />
+      <workItem from="1537887794146" duration="405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16785000" />
+    <option name="totallyTimeSpent" value="16932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="127" y="84" width="1447" height="915" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494817" />
       <window_info anchor="bottom" id="TODO" order="6" />
