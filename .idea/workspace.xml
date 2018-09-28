@@ -19,8 +19,8 @@
       <file leaf-file-name="Loan Calculator.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Loan Calculator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="18" selection-end-line="395" />
+            <state relative-caret-position="152">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/显示实时闹钟.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
-              <caret line="21" column="34" lean-forward="true" selection-end-line="33" selection-end-column="7" />
+              <caret line="21" column="34" selection-end-line="33" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -116,6 +116,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,7 +128,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,11 +185,13 @@
       <workItem from="1538117010526" duration="3000" />
       <workItem from="1538117297294" duration="8000" />
       <workItem from="1538117452890" duration="2000" />
+      <workItem from="1538120974436" duration="5000" />
+      <workItem from="1538120983793" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18806000" />
+    <option name="totallyTimeSpent" value="18814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="23" width="1657" height="1027" extended-state="0" />
@@ -502,7 +504,7 @@
     <entry file="file://$PROJECT_DIR$/显示实时闹钟.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="21" column="34" lean-forward="true" selection-end-line="33" selection-end-column="7" />
+          <caret line="21" column="34" selection-end-line="33" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -515,8 +517,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Loan Calculator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="18" selection-end-line="395" />
+        <state relative-caret-position="152">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
