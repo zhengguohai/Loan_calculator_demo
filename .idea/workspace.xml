@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b796a693-63d2-490b-879d-c18631865e25" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/显示内容的简单客户端JavaScript.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/显示实时闹钟.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Loan Calculator.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Loan Calculator.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Loan Calculator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            <state relative-caret-position="266">
+              <caret line="14" column="18" selection-end-line="395" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="显示内容的简单客户端JavaScript.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="显示内容的简单客户端JavaScript.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/显示内容的简单客户端JavaScript.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="22" column="32" lean-forward="true" selection-end-line="50" selection-end-column="7" />
+              <caret line="22" column="32" selection-end-line="50" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -118,7 +116,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,6 +127,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,15 +183,16 @@
       <workItem from="1538116450248" duration="271000" />
       <workItem from="1538117000482" duration="2000" />
       <workItem from="1538117010526" duration="3000" />
+      <workItem from="1538117297294" duration="8000" />
+      <workItem from="1538117452890" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18796000" />
+    <option name="totallyTimeSpent" value="18806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="23" width="1657" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16656609" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -500,13 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Loan Calculator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/显示实时闹钟.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -517,7 +509,14 @@
     <entry file="file://$PROJECT_DIR$/显示内容的简单客户端JavaScript.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="22" column="32" lean-forward="true" selection-end-line="50" selection-end-column="7" />
+          <caret line="22" column="32" selection-end-line="50" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Loan Calculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" selection-end-line="395" />
         </state>
       </provider>
     </entry>
